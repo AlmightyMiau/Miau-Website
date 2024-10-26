@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AlmightyMiau's Personal Website">
+    <link href="styles.css" rel="stylesheet">
+    <title>Miau - Silly</title>
+    <link rel="icon" type="image/x-icon" href="miau.jpg">
+    <script>
+        function hidePages() {
+            let status = document.getElementById("pages").style.display;
+            if (status === "none") {
+                document.getElementById("pages").style.display = "block";
+            } else {
+                document.getElementById("pages").style.display = "none";
+            }
+        }
+        function hideBut() {
+            let status = document.getElementById("buttons").style.display;
+            if (status === "none") {
+                document.getElementById("buttons").style.display = "block";
+            } else {
+                document.getElementById("buttons").style.display = "none";
+            }
+        }
+        function sillyBackground(argument) {
+            let image = document.body.style.backgroundImage
+            console.log(image);
+            console.log(argument);
+            argument = "url(\"" + argument + "\")"
+            console.log(argument);
+            if (image == argument) {
+                document.body.style.backgroundImage = "url('backgrounds/stars3.gif')";
+            } else {
+                document.body.style.backgroundImage = argument;
+            }
+        }
+    </script>
+</head>
+
+<body id="bg">
+    <div id="container">
+        <div class="topbar"></div>
+        <div id="flex">
+            <main>
+                <div class="title">&nbsp; Images, Stamps, & Buttons </div>
+                <div class="content">
+                    <p>
+                        All of the sillies that I've "borrowed" from other websites
+                    </p>
+                    <p>
+                        Some stamps and stickers can be clicked :3
+                    </p>
+                </div>
+                <div class="title">&nbsp; Stamps </div>
+                <div class="content">
+                    <img width="99" height="56" src="sillies/20.gif">
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/girls.png')"><img width="99" height="56" src="sillies/girls.png"></button>
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/s-evilpenis.png')"><img width="99" height="56" src="sillies/s-evilpenis.png"></button>
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/s-goodpenis.png')"><img width="99" height="56" src="sillies/s-goodpenis.png"></button>
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/s-weenor.gif')"><img width="99" height="56" src="sillies/s-weenor.gif"></button>
+                    <img width="99" height="56" src="sillies/s-lazydraw.png">
+                    <img width="99" height="56" src="sillies/s-robots.gif">
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/s-sparkleon.png')"><img width="99" height="56" src="sillies/s-sparkleon.png"></button>
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/s-underattack.png')"><img width="99" height="56" src="sillies/s-underattack.png"></button>
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/sparkleon.png')"><img width="99" height="56" src="sillies/sparkleon.png"></button>
+                    <img width="99" height="56" src="sillies/s-wire.jpg">
+                    <img width="99" height="56" src="sillies/anti_internet.gif">
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/delete_system32_1.gif')"><img width="99" height="56" src="sillies/delete_system32_1.gif"></button>
+                    <img width="99" height="56" src="sillies/like_the_legend_of_the_penis.webp">
+                    <img width="99" height="56" src="sillies/s-ddlc.png">
+                </div>
+                <div class="title">&nbsp; Stickers </div>
+                <div class="content">
+                    <img width="88" height="31" src="sillies/1nft.png">
+                    <img width="88" height="31" src="sillies/3computer.jpg">
+                    <img width="88" height="31" src="sillies/a16.gif">
+                    <img width="88" height="31" src="sillies/piracy.webp">
+                    <img width="88" height="31" src="sillies/transrightsnow.webp">
+                    <img width="184" height="31" src="sillies/trainspride.gif">
+                    <img width="184" height="31" src="sillies/b-boyliker.gif">
+                    <button style="background-color: transparent; margin: -6px;" onclick="sillyBackground('sillies/piss.gif')"><img width="88" height="31" src="sillies/piss.gif"></button>
+                    <img width="184" height="31" src="sillies/b-twotrucks.gif">
+                    <img width="184" height="31" src="sillies/b-yippee.gif">
+                    <img width="88" height="31" src="sillies/getqueer.gif">
+                    <img width="184" height="31" src="sillies/b-stardust.gif">
+                    <img width="184" height="31" src="sillies/irresistible.gif">
+                    <img width="88" height="31" src="sillies/3void.png">
+                    <img width="184" height="31" src="sillies/subtext.gif">
+                    <img width="184" height="31" src="sillies/iloveyaoi.gif">
+                    <img width="88" height="31" src="sillies/oldyaoi.gif">
+                    <img width="184" height="31" src="sillies/weezer.gif">
+                    <img width="184" height="31" src="sillies/delete_system32.gif">
+                </div>
+                <div class="title">&nbsp; Backgrounds (Hover for preview)</div>
+                <div class="content" id="bgs">
+                    <img width="100" height="100" src="backgrounds/stars3.gif">
+                    <img width="100" height="100" src="backgrounds/background.gif">
+                    <img width="100" height="100" src="backgrounds/bck-mindwarp.jpg">
+                    <img width="100" height="100" src="backgrounds/bck-pnklightning.jpg">
+                    <img width="100" height="100" src="backgrounds/catcolors.gif">
+                    <img width="100" height="100" src="backgrounds/comp014.gif">
+                    <img width="100" height="100" src="backgrounds/comp016.gif">
+                    <img width="100" height="100" src="backgrounds/comp020.gif">
+                    <img width="100" height="100" src="backgrounds/flowers.webp">
+                    <img width="100" height="100" src="backgrounds/gifbground-804-0009.gif">
+                    <img width="100" height="100" src="backgrounds/num.gif">
+                </div>
+            </main>
+            <aside>
+                <div class="sidebar-title">&nbsp; Pages <button onclick="hidePages()">&vArr;</button></div>
+                <div id="pages">
+                    <nav id="nav">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="silly.html">Silly</a>
+                            </li>
+                            <li>
+                                <a href="factorio.html">Factorio</a>
+                            </li>
+                            <li>
+                                <a href="art.html">Art</a>
+                            </li>
+                            <li>
+                                <a href="cats.html">Cats</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-title">&nbsp; Buttons <button onclick="hideBut()">&vArr;</button></div>
+                <div id="buttons">
+                    <nav id="nav">
+                        <div style="width: 88px; margin:0 auto;" id="buttons">
+                            <br>
+                            <a href="https://goblin-heart.net/" target="_blank"><img
+                                    src="https://goblin-heart.net/assets/images/gg-button.gif"></a>
+                            <br>
+                            <a href="https://goblin-heart.net/sadgrl/" target="_blank"><img
+                                    alt="88x31 button that says LEARN - HTML, Layouts, CSS, Guides, Websites: Learn @ sadgrl.online"
+                                    src="https://goblin-heart.net/assets/images/sadgrl-button.gif"></a>
+                            <br>
+                            <a href="https://yesterweb.org/no-to-web3/"><img style="border:1px solid white;"
+                                    src="https://auzziejay.com/images/noweb32.gif"></a>
+                            <br>
+                            <a href="https://yesterweb.org/no-to-web3/"><img style="border:1px solid white;"
+                                    src="https://yesterweb.org/img/button.png"></a>
+                            <br>
+                            <a href="https://megidolaon.gay"><img 
+                                    src="https://megidolaon.gay/media/megidolaongay.png"></a>
+                            <br>
+                        </div>
+                        <br>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+        <footer id="footer">&#916; Copyworng :3</footer>
+    </div>
+    <script src="hoverBackground.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AlmightyMiau's Personal Website">
+    <link href="styles.css" rel="stylesheet">
+    <title>Miau - Art</title>
+    <link rel="icon" type="image/x-icon" href="miau.jpg">
+    <script>
+        function hidePages() {
+            let status = document.getElementById("pages").style.display;
+            if (status === "none") {
+                document.getElementById("pages").style.display = "block";
+            } else {
+                document.getElementById("pages").style.display = "none";
+            }
+        }
+        function hideBut() {
+            let status = document.getElementById("buttons").style.display;
+            if (status === "none") {
+                document.getElementById("buttons").style.display = "block";
+            } else {
+                document.getElementById("buttons").style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="topbar"></div>
+        <div id="flex">
+            <main>
+                <div class="title">&nbsp; Art</div>
+                <div class="content">
+                    <p>
+                        I enjoy drawing, creating characters, desinging 3D models, and carving wood, but
+                        find it hard to be motivated to do any of it.
+                    </p>
+                </div>
+                <div class="title">&nbsp; Drawings</div>
+                <div class="content">
+                    <div class="centered">
+                        <img width="31%" src="art/cat (1).jpg">
+                        <img width="65%" src="art/cat (2).jpg">
+                        <img width="54%" src="art/cyber-sec (1).jpg">
+                        <img width="42%" src="art/cyber-sec (2).jpg">
+                        <img width="45%" src="art/cyber-sec (3).jpg">
+                        <img width="50%" src="art/cyber-sec (4).jpg">
+                        <img width="95%" src="art/math (1).jpg">
+                        <img width="40%" src="art/math (2).jpg">
+                        <img width="55%" src="art/math (3).jpg">
+                        <img width="30%" src="art/math (4).jpg">
+                        <img width="33%" src="art/math (5).jpg">
+                        <img width="34%" src="art/math (7).jpg">
+                        <img width="60%" src="art/math (6).jpg">
+                        <img width="35%" src="art/tattoo.jpg">
+                        <img width="48%" src="art/digital (1).jpg">
+                        <img width="48%" src="art/digital (2).jpg">
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <div class="sidebar-title">&nbsp; Pages <button onclick="hidePages()">&vArr;</button></div>
+                <div id="pages">
+                    <nav id="nav">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="silly.html">Silly</a>
+                            </li>
+                            <li>
+                                <a href="factorio.html">Factorio</a>
+                            </li>
+                            <li>
+                                <a href="art.html">Art</a>
+                            </li>
+                            <li>
+                                <a href="cats.html">Cats</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-title">&nbsp; Buttons <button onclick="hideBut()">&vArr;</button></div>
+                <div id="buttons">
+                    <nav id="nav">
+                        <div style="width: 88px; margin:0 auto;" id="buttons">
+                            <br>
+                            <a href="https://goblin-heart.net/" target="_blank"><img
+                                    src="https://goblin-heart.net/assets/images/gg-button.gif"></a>
+                            <br>
+                            <a href="https://goblin-heart.net/sadgrl/" target="_blank"><img
+                                    alt="88x31 button that says LEARN - HTML, Layouts, CSS, Guides, Websites: Learn @ sadgrl.online"
+                                    src="https://goblin-heart.net/assets/images/sadgrl-button.gif"></a>
+                            <br>
+                            <a href="https://yesterweb.org/no-to-web3/"><img style="border:1px solid white;"
+                                    src="https://auzziejay.com/images/noweb32.gif"></a>
+                            <br>
+                            <a href="https://yesterweb.org/no-to-web3/"><img style="border:1px solid white;"
+                                    src="https://yesterweb.org/img/button.png"></a>
+                            <br>
+                            <a href="https://megidolaon.gay"><img 
+                                    src="https://megidolaon.gay/media/megidolaongay.png"></a>
+                            <br>
+                        </div>
+                        <br>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+        <footer id="footer">&#916; Copyworng :3</footer>
+    </div>
+</body>
+
+</html>

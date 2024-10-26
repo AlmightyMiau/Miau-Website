@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AlmightyMiau's Personal Website">
+    <link href="styles.css" rel="stylesheet">
+    <title>Miau - Home Page</title>
+    <link rel="icon" type="image/x-icon" href="miau.jpg">
+    <script>
+        function hidePages() {
+            let status = document.getElementById("pages").style.display;
+            if (status === "none") {
+                document.getElementById("pages").style.display = "block";
+            } else {
+                document.getElementById("pages").style.display = "none";
+            }
+        }
+        function hideBut() {
+            let status = document.getElementById("buttons").style.display;
+            if (status === "none") {
+                document.getElementById("buttons").style.display = "block";
+            } else {
+                document.getElementById("buttons").style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="topbar"></div>
+        <div id="flex">
+            <main>
+                <div class="title">&nbsp; Welcome home pookie! </div>
+                <div class="content">
+                    <p>
+                        Hiiiii :3 I'm Miau. I like engineering and computers. I have somewhat of an obsession with
+                        factorio at 1300+ hours played in 3 years. I am also learning German and Japanese on Duolingo.
+                    </p>
+                </div>
+                <div class="title">&nbsp; Website Journal</div>
+                <div class="content">
+                    <div class="date">10/23/2024</div>
+                    <p>
+                        woa not neglected this time
+                    </p>
+                    <p>
+                        I added megidolaon's button to the side bar 
+                    </p>
+                    <p>
+                        added 4 stamps and 10 stickers to <a href="silly.html">silly</a>
+                    </p>
+                    <p> thats it :3</p>
+                </div>
+                <div class="content">
+                    <div class="date">10/20/2024</div>
+                    <p>
+                        <p>
+                            AAAAAAAAAAAAAAAAAAAAAAA I neglected my child again
+                        </p>
+                        <p>
+                            I am here today to add a new feature to the <a href="silly.html">SILLY</a> page, so that when you click/hover over the PISS sticker, it will change the background to that sticker. :3
+                        </p>
+                        <p>
+                            I am planning on adding a bunch of stuff to the <a href="factorio.html">Factorio</a> page, but i haven't gotten around to it bc it sounds like a lot of work &colon;&lpar;
+                        </p>
+                        <p>
+                            I am also <i>going to</i> add a list and pictures to the <a href="cats.html">Cats</a> page
+                        </p>
+                        <p>
+                            I've been in my first actual semester of college for the past 2 months, which is part of why I haven't been working on this. I really enjoy my comp sci class, even though I should probably be in a higher level class. If I could, I would only do this class (computers :3). I am also in a calculus 1 class, most of which I already learned in high school :/. My art appreciation class is quite interesting, learning about different paints, how they're made, what they excel in, etc. I really don't like my english class and I can't wait until I don't have to take any more.
+                        </p>
+                        <p>
+                            :3
+                        </p>
+                        <p>
+                            ok 2 hours later and I have added background effects to some of the stamps and stickers. (I don't think all of them need/deserve it)
+                            When you click on a sticker, for example the one that says piss, it will toggle that image as the background. The set of backgrounds at the bottom use a different method that I completely stole from <a href="https://goblin-heart.net/sadgrl/webmastery/downloads/tiledbgs">sadgrl</a>, which will have a preview of a background while you hover your cursor over it. 
+                        </p>
+                        <p>
+                            It is 4:23 am and I am quite eepy &brvbar;| goodnight
+                        </p>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="date">8/7/2024</div>
+                    <p>
+                        <p>&DDotrahd;&nbsp;Tried using python with flask to simplify adding new pages, but it didn't work out &colon;&lpar;</p>
+                        <p>&DDotrahd;&nbsp;Added a new page called <a href="silly.html">Silly</a></p>
+                        <p>&DDotrahd;&nbsp;Added a bunch of stamps and buttons to <a href="silly.html">Silly</a></p>
+                        <p>&DDotrahd;&nbsp;Finally added art to <a href="art.html">Art</a>. I have drawings of my cat Sassy, Adeptus Mechanicus artwork, memes I drew during math class, a marker tattoo I made a while ago, and some digital art</p>
+                        <p>&DDotrahd;&nbsp;Fixed tab titles, added a metadata description, and added a tab favicon
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="date">8/1/2024</div>
+                    <p>
+                    <p>Wow it's already been a month and I haven't done anything on here.</p>
+                    <p>&DDotrahd;&nbsp;I finished my first college course recently. I had CIS-1A, an introduction to
+                        computer systems and microsoft office. It was pretty easy and I can't wait to start my fall
+                        term. I'm gonna have C++ programming, Calculus I, English comp, and Art appreciation.</p>
+                    <p>&DDotrahd;&nbsp;I made a new page today that I've been thinking about adding for a week now: <a
+                            href="breakthroughs.html">Breakthroughs</a>. I want a place
+                        where I can just put down my thoughts.</p>
+                    <p>&DDotrahd;&nbsp;The supervisor of a summer program I've gone to for a few years suggested a
+                        scholarship I should apply for, along with giving me a letter of recomendation. I started the
+                        application process today, but got too tired half way through</p>
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="date">7/5/2024</div>
+                    <p>
+                        The first version of my personal website, made for the Harvard CS50 class. I'm making this
+                        personal site to learn HTML/CSS, and because I love how creative people are with their personal
+                        websites. I also don't like social media and this just feels better.
+                    </p>
+                </div>
+            </main>
+            <aside>
+                <div class="sidebar-title">&nbsp; Pages <button onclick="hidePages()">&vArr;</button></div>
+                <div id="pages">
+                    <nav id="nav">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="silly.html">Silly</a>
+                            </li>
+                            <li>
+                                <a href="factorio.html">Factorio</a>
+                            </li>
+                            <li>
+                                <a href="art.html">Art</a>
+                            </li>
+                            <li>
+                                <a href="cats.html">Cats</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sidebar-title">&nbsp; Buttons <button onclick="hideBut()">&vArr;</button></div>
+                <div id="buttons">
+                    <nav id="nav">
+                        <div style="width: 88px; margin:0 auto;" id="buttons">
+                            <br>
+                            <a href="https://goblin-heart.net/" target="_blank"><img
+                                    src="https://goblin-heart.net/assets/images/gg-button.gif"></a>
+                            <br>
+                            <a href="https://goblin-heart.net/sadgrl/" target="_blank"><img
+                                    alt="88x31 button that says LEARN - HTML, Layouts, CSS, Guides, Websites: Learn @ sadgrl.online"
+                                    src="https://goblin-heart.net/assets/images/sadgrl-button.gif"></a>
+                            <br>
+                            <a href="https://yesterweb.org/no-to-web3/"><img style="border:1px solid white;"
+                                    src="https://auzziejay.com/images/noweb32.gif"></a>
+                            <br>
+                            <a href="https://yesterweb.org/no-to-web3/"><img style="border:1px solid white;"
+                                    src="https://yesterweb.org/img/button.png"></a>
+                            <br>
+                            <a href="https://megidolaon.gay"><img 
+                                    src="https://megidolaon.gay/media/megidolaongay.png"></a>
+                            <br>
+                        </div>
+                        <br>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+        <footer id="footer">&#916; Copyworng :3</footer>
+    </div>
+</body>
+
+</html>
