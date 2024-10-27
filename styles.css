@@ -64,9 +64,6 @@ body {
     max-width: 850px;
     margin: 0 auto;
 }
-a {
-    color:var(--accent-1);
-}
 .topbar img {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -80,6 +77,10 @@ a {
 #flex {
     display: flex;
     max-width: 850px;
+}
+
+a {
+    color:var(--accent-1);
 }
 
 aside {
