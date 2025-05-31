@@ -9,6 +9,7 @@
     <link href="styles.css" rel="stylesheet">
     <title>Miau - Silly</title>
     <link rel="icon" type="image/x-icon" href="miau.jpg">
+    <script src="rememberBackground.js"></script>
     <script>
         function hidePages() {
             let status = document.getElementById("pages").style.display;
@@ -27,6 +28,7 @@
             }
         }
         function sillyBackground(argument) {
+            remember(argument);
             let image = document.body.style.backgroundImage
             console.log(image);
             console.log(argument);
