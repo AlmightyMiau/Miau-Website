@@ -200,7 +200,7 @@ button {
         padding-right: 10px;
     }
 
-    nav ul>ul, #buttons, nav div a, nav div br, nav br {
+    nav ul>ul, #buttons, #buttonsHeader, #chatbox, #chatboxHeader, nav div a, nav div br, nav br {
         display: none;
     }
 

@@ -27,6 +27,14 @@
                 document.getElementById("buttons").style.display = "none";
             }
         }
+        function hideChat() {
+            let status = document.getElementById("chatbox").style.display;
+            if (status === "none") {
+                document.getElementById("chatbox").style.display = "block";
+            } else {
+                document.getElementById("chatbox").style.display = "none";
+            }
+        }
     </script>
 </head>
 
@@ -45,7 +53,7 @@
                 </div>
             </main>
             <aside>
-                <div class="sidebar-title">&nbsp; Pages <button onclick="hidePages()">&vArr;</button></div>
+                <div class="sidebar-title">&nbsp; Pages <button onclick="hideID('pages')">&vArr;</button></div>
                 <div id="pages">
                     <nav id="nav">
                         <ul>
@@ -70,7 +78,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="sidebar-title">&nbsp; Buttons <button onclick="hideBut()">&vArr;</button></div>
+                <div class="sidebar-title" id="buttonsHeader">&nbsp; Buttons <button onclick="hideID('buttons')">&vArr;</button></div>
                 <div id="buttons">
                     <nav id="nav">
                         <div style="width: 88px; margin:0 auto;" id="buttons">
@@ -94,6 +102,10 @@
                         </div>
                         <br>
                     </nav>
+                </div>
+                <div class="sidebar-title" id="chatboxHeader">&nbsp; Le chat <button onclick="hideID('chatbox')">&vArr;</button></div>
+                <div id="chatbox">
+                    <iframe src="https://www3.cbox.ws/box/?boxid=3547087&boxtag=ltfetV" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
                 </div>
             </aside>
         </div>

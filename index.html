@@ -12,20 +12,12 @@
     <link rel="icon" type="image/x-icon" href="miau.jpg">
     <script src="rememberBackground.js"></script>
     <script>
-        function hidePages() {
-            let status = document.getElementById("pages").style.display;
+        function hideID(ID) {
+            let status = document.getElementById(ID).style.display;
             if (status === "none") {
-                document.getElementById("pages").style.display = "block";
+                document.getElementById(ID).style.display = "block";
             } else {
-                document.getElementById("pages").style.display = "none";
-            }
-        }
-        function hideBut() {
-            let status = document.getElementById("buttons").style.display;
-            if (status === "none") {
-                document.getElementById("buttons").style.display = "block";
-            } else {
-                document.getElementById("buttons").style.display = "none";
+                document.getElementById(ID).style.display = "none";
             }
         }
     </script>
@@ -48,6 +40,14 @@
                     </div>
                 </div>
                 <div class="title">&nbsp; Website Journal</div>
+                <div class="content">
+                    <div class="date">6/5/2025</div>
+                    <p>
+                        I added a chat box on the aside --> <br>
+                        you can message on it without signing up or anything. <br>
+                        Say whatever :3!
+                    </p>
+                </div>
                 <div class="content">
                     <div class="date">6/4/2025</div>
                     <img src="ultrakill/menu2.png" style="width:48%">
@@ -269,7 +269,7 @@
                 </div>
             </main>
             <aside>
-                <div class="sidebar-title">&nbsp; Pages <button onclick="hidePages()">&vArr;</button></div>
+                <div class="sidebar-title">&nbsp; Pages <button onclick="hideID('pages')">&vArr;</button></div>
                 <div id="pages">
                     <nav id="nav">
                         <ul>
@@ -294,7 +294,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="sidebar-title">&nbsp; Buttons <button onclick="hideBut()">&vArr;</button></div>
+                <div class="sidebar-title" id="buttonsHeader">&nbsp; Buttons <button onclick="hideID('buttons')">&vArr;</button></div>
                 <div id="buttons">
                     <nav id="nav">
                         <div style="width: 88px; margin:0 auto;" id="buttons">
@@ -318,6 +318,10 @@
                         </div>
                         <br>
                     </nav>
+                </div>
+                <div class="sidebar-title" id="chatboxHeader">&nbsp; Le chat <button onclick="hideID('chatbox')">&vArr;</button></div>
+                <div id="chatbox">
+                    <iframe src="https://www3.cbox.ws/box/?boxid=3547087&boxtag=ltfetV" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
                 </div>
             </aside>
         </div>
