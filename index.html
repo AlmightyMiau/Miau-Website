@@ -20,6 +20,18 @@
                 document.getElementById(ID).style.display = "none";
             }
         }
+        function hideTag(tag) {
+            let elements = document.getElementsByTagName("spoiler");
+            console.log(elements);
+            for (let i = 0; i < elements.length; i++) {
+                console.log(elements.item(i).style.display);
+                if (elements.item(i).style.display === "none") {
+                    elements.item(i).style.display = "block";
+                } else {
+                    elements.item(i).style.display = "none";
+                }
+            }
+        }
     </script>
 </head>
 
@@ -40,7 +52,16 @@
                             src="sillies/miau.gif"></a>
                     </div>
                 </div>
-                <div class="title">&nbsp; Website Journal</div>
+                <div class="title">&nbsp; Website Journal <button onclick="hideTag('spoiler')">&vArr;</button></div>
+                <div class="content">
+                    <div class="date">9/21/2026 pt 2</div>
+                    <p>
+                        hiii im back ^^ I added the new function based on hideID(), called hideTag(), which can now hide any [<]spoiler[>]ed things :3
+                    </p>
+                    <p>
+                        I also changed some things in the last journal, such as adding some friend names: Erina and Unc
+                    </p>
+                    </div>
                 <div class="content">
                     <div class="date">9/21/2026</div>
                     <p>
@@ -50,16 +71,16 @@
                         Only doing it now because it went down again :3 It stopped working because some service I installed called wstunnel was hogging the https port and not allowing nginx to work. I don't even know when or why I installed wstunnel. (It might've been to set up email to get past vultr's restrictions)
                     </p>
                     <p>
-                        After I fixed the website, I also fixed the git pagek, which wasn't updated properly last time I was here. And I changed the website introduction :3 and updated my factorio hours. I am currently at 1789.5 hours. It hasn't gone up that much this year because I didn't play for like 6 months ,_,
+                        After I fixed the website, I also fixed the git page, which wasn't updated properly last time I was here. And I changed the website introduction :3 and updated my factorio hours. I am currently at 1789.5 hours. It hasn't gone up that much this year because I didn't play for like 6 months ,_,
                     </p>
                     <p>
-                        Anyway, update time ^_^
+                        Anyway, journal time ^_^
                     </p>
                     <p>
-                        I went to a Gorrilaz interactive exhibit in February :3 that was pretty cool. They had an RV for one of the rooms and it was really stinky :P but I appreciated how they got the feeling across. 
+                        I went to a Gorrilaz interactive exhibit with Erina and Unc in February :3 that was pretty cool. They had an RV for one of the rooms and it was really stinky :P but I appreciated how they got the feeling across. 
                     </p>
                     <p>
-                        Around april 2nd, I started playing Pikmin Bloom with my friend :3 It was very fun and gave me both direction and reason to go on walks (I used to only go on night walks). Very pleasing planting flowers and growing flowers and feeding pikmin. However it took a lot of my phone battery :/ and my friend and I both started getting bored of it by the middle of june :(
+                        Around april 2nd, I started playing Pikmin Bloom with Erina :3 It was very fun and gave me both direction and reason to go on walks (I used to only go on night walks). Very pleasing planting flowers and growing flowers and feeding pikmin. However it took a lot of my phone battery :/ and my friend and I both started getting bored of it by the middle of june :(
                     </p>
                     <p>
                         I want to curse my local health clinic but don't want to say my city :[.. but fuck them :( I tried going through their hoops to get started on HRT (wow i'm trans guys who would've guessed :P), I met with my new doctor, waited 6 months, eventually made an endocrinology appointment, and when the day finally came, they cancelled on me two hours before it started X( saying they didn't have any qualified endocrinologists for prescribing HRT.
@@ -75,7 +96,7 @@
                         ok not in order but another idea: a button somewhere (probably the top) that reveals [<]spoilered[>] sentences so I can say things more freely (In case family looks at my website :3)
                     </p>
                     <p>
-                        I went to Chubby Cattle, an all-you-can-eat wagyu restaurant, and it was delicious and wonderful even though I'm not a big fan of meat. I was also quite high for it so I'm sure that helped but it was nice and only like $50 each :3 
+                        I went to Chubby Cattle, an all-you-can-eat wagyu restaurant, with Erina and it was delicious and wonderful even though I'm not a big fan of meat. <spoiler>I was also quite high for it so I'm sure that helped but </spoiler>it was nice and only like $50 each :3 
                     </p>
                     <p>
                         I went to the beach by myself a couple months ago (by train) and walked down the beach a bunch. <spoiler>And drank 3/4 of a bottle of vodka :P. </spoiler>It was awesome and great. I went again to the same beach with some friends yesterday (by train again) but it wasn't as good :(. 2/4 of them ended up not going and then <spoiler>we got drunk too fast off the biggie ball, twisted tea, and malibu dr pepper, </spoiler>and one friend threw up :(<spoiler> and I couldn't go in the ocean for fear of forgetting to stay above water :P</spoiler>. BUT afterwards we picked up one of the friends and went to jack in the box :3. So it was nice overall.
@@ -87,6 +108,7 @@
                         Yes Yes I have tits now and they will be wonderful ^_^
                     </p></spoiler>
                 </div>
+                <script>hideTag("spoiler")</script>
                 <div class="content">
                     <div class="date">11/23/2025</div>
                     <p>
